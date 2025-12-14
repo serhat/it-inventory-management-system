@@ -26,9 +26,10 @@ const Login = () => {
       // --------------------
 
       alert(`Giriş Başarılı! Hoşgeldin ${response.data.role === 'admin' ? 'Yönetici' : 'Personel'}`);
+      navigate('/');
       
       // Dashboard sayfasına yönlendir (sayfayı yenileyerek)
-      window.location.href = '/dashboard'; 
+      //window.location.href = '/dashboard'; 
 
     } catch (err: any) {
       console.error(err);
