@@ -29,6 +29,6 @@ app.use((req, res) => {
 
 const PORT = process.env.PORT || 3001; 
 
-app.listen(PORT, () => {
+app.listen(Number(PORT), '0.0.0.0', () => {
   console.log(`Sunucu şu an çalışıyor: Port ${PORT}`);
 });
