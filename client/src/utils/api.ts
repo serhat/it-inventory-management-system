@@ -1,7 +1,11 @@
 import axios from 'axios';
 
+// Eğer sistemde tanımlı özel bir adres varsa (Render) onu kullan.
+// Yoksa varsayılan olarak localhost'u kullan.
+const baseURL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
+
 const api = axios.create({
-  baseURL: 'http://localhost:3001/api',
+  baseURL: baseURL,
 });
 
 // Her istekte Token'ı header'a ekle
