@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2016",             /* Modern JavaScript'e çevir */
+    "module": "commonjs",           /* Node.js'in anladığı modül sistemi */
+    "rootDir": "./src",             /* Kodlarımız nerede? */
+    "moduleResolution": "node",     /* Modülleri Node stiliyle bul */
+    "outDir": "./dist",             /* Çıktıları buraya koy */
+    "esModuleInterop": true,        /* CommonJS ve ES Modülleri uyumlu çalışsın */
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                 /* Güvenlik açık */
+    "skipLibCheck": true            /* Kütüphane dosyalarını kontrol etme (Hızlanır) */
+    
+    /* "verbatimModuleSyntax": true  <-- BU SATIR HATAYI YAPIYORDU, KALDIRDIK */
+  },
+  "exclude": ["client", "node_modules"]  // <--- BU SATIRI EKLE
+}

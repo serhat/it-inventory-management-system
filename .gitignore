@@ -1,0 +1,22 @@
+
+/src/generated/prisma
+ 
+# .gitignore
+
+# Bağımlılıklar (Çok yer kaplar, yüklenmez)
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Derleme dosyaları
+dist/
+build/
+
+# GİZLİ ŞİFRELER (Burası Çok Önemli!)
+.env
+.env.local
+server/.env
+client/.env
+
+# Sistem dosyaları
+.DS_Store
