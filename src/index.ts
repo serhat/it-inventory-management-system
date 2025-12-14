@@ -27,7 +27,8 @@ app.use((req, res) => {
   res.status(404).json({ error: `Adres Bulunamadı (404): ${req.method} ${req.url}` });
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001; 
+
 app.listen(PORT, () => {
-  console.log(`Sunucu şu an çalışıyor: http://localhost:3001`);
+  console.log(`Sunucu şu an çalışıyor: Port ${PORT}`);
 });
